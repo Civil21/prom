@@ -1,0 +1,18 @@
+<div class="col-12 col-md-3">
+<%= link_to product do %>
+  <div class="card">
+    <div class="">
+      <%=image_tag product.image, height: 120, class:"card-img-top" if product.image.attached?%>
+    </div>
+    <div class="card-body">
+      <h6 class="card-subtitle mb-2 text-muted"><%=product.show_price%></h6>
+      <h5 class="card-title"><%=product.name%></h5>
+      <div class="">
+        <button type="button" name="button" class="card-link btn btn-warning">Купити</button>
+        <%=link_to "",class:"card-link" do %>
+        <%end%>
+      </div>
+    </div>
+  </div>
+<%end%>
+</div>

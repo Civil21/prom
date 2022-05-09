@@ -1,0 +1,8 @@
+<h1><%=@product.name%></h1>
+<span><%=@product.show_price%></span>
+<div class="">
+  <%@product.images.each do |image|%>
+    <%=image_tag image%>
+  <%end%>
+</div>
+<p><%=@product.description%></p>

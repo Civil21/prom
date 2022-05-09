@@ -1,0 +1,12 @@
+active_admin_form_for [:admin, resource] do |f|
+  f.inputs do
+    f.input :present
+    f.input :category
+    f.input :name
+    f.input :price
+    f.input :description
+    f.input :image, as: :file
+    f.input :images, as: :file, input_html: { multiple: true }
+  end
+  f.actions
+end
